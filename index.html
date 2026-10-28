@@ -3,24 +3,51 @@
 <title>Formula Zero prototypes</title>
 <link href="https://fonts.googleapis.com/css2?family=Titillium+Web:ital,wght@0,400;0,700;1,900&display=swap" rel="stylesheet">
 <style>
-body{margin:0;font-family:'Titillium Web',system-ui,sans-serif;background:#15151E;color:#fff;min-height:100vh;display:grid;place-items:center;padding:24px;box-sizing:border-box}
-main{max-width:720px;width:100%}
-h1{font-size:56px;font-style:italic;font-weight:900;text-transform:uppercase;margin:0 0 8px}
-h1 span{color:#E10600}
-p{color:#c9c9cf;font-size:18px;margin:0 0 32px}
+body{margin:0;font-family:'Titillium Web',system-ui,sans-serif;background:#15151E;color:#fff;min-height:100vh;padding:56px 24px;box-sizing:border-box}
+main{max-width:960px;margin:0 auto}
+h1{font-size:56px;font-style:italic;font-weight:900;text-transform:uppercase;margin:0 0 8px;line-height:1}
+h1 span,h2 span{color:#E10600}
+h2{font-size:30px;font-style:italic;font-weight:900;text-transform:uppercase;margin:56px 0 6px}
+h3{font-size:15px;text-transform:uppercase;letter-spacing:.14em;color:#E10600;margin:28px 0 12px;display:flex;justify-content:space-between;align-items:baseline}
+h3 a{font-size:13px;letter-spacing:0;text-transform:none;color:#c9c9cf;text-decoration:none;font-weight:700}h3 a:hover{color:#fff}
+p{color:#c9c9cf;font-size:18px;margin:0 0 24px}
 .grid{display:grid;grid-template-columns:1fr 1fr;gap:16px}
-a{display:block;background:#1F1F27;border:1px solid #38383F;border-top:4px solid #E10600;border-radius:12px;padding:24px;color:#fff;text-decoration:none;transition:.2s}
-a:hover{background:#E10600}
-a b{display:block;font-size:24px;font-style:italic;text-transform:uppercase}
-a small{color:#c9c9cf}
-a:hover small{color:#fff}
-@media(max-width:560px){.grid{grid-template-columns:1fr}h1{font-size:40px}}
+.grid3{display:grid;grid-template-columns:repeat(3,1fr);gap:12px}
+.card{display:block;background:#1F1F27;border:1px solid #38383F;border-top:4px solid #E10600;border-radius:12px;padding:22px 24px;color:#fff;text-decoration:none;transition:.2s}
+.card:hover{background:#E10600;transform:translateY(-2px)}
+.card b{display:block;font-size:24px;font-style:italic;font-weight:900;text-transform:uppercase;line-height:1.1}
+.card small{color:#c9c9cf;display:block;margin-top:4px}
+.card:hover small,.card:hover em{color:#fff}
+.card em{font-style:normal;color:#E10600;font-weight:700;font-size:13px;letter-spacing:.1em;text-transform:uppercase}
+.card.concept{padding:18px 20px;border-top-width:3px}
+.card.concept b{font-size:22px}
+@media(max-width:720px){.grid,.grid3{grid-template-columns:1fr}h1{font-size:40px}}
 </style></head>
 <body><main>
 <h1>Formula <span>Zero</span></h1>
-<p>Two website prototypes for the Formula Zero sim racing league. Click through every page, and switch between desktop and mobile.</p>
+<p>Website prototypes and logo concepts for the Formula Zero sim racing league, by Claude and Codex.</p>
+
+<h2>Website <span>prototypes</span></h2>
+<p>Click through every page, and switch between desktop and mobile.</p>
 <div class="grid">
-<a href="formula-zero-claude.html"><b>Claude</b><small>English · F1-style red navigation, Stewards page</small></a>
-<a href="formula-zero-codex.html"><b>Codex</b><small>Português · editorial dark style, Comissários page</small></a>
+<a class="card" href="formula-zero-claude.html"><b>Claude</b><small>English · F1-style red navigation, Stewards page</small></a>
+<a class="card" href="formula-zero-codex.html"><b>Codex</b><small>Português · editorial dark style, Comissários page</small></a>
+</div>
+
+<h2>Logo concepts &amp; <span>brand portfolios</span></h2>
+<p>Each concept opens a full brand book: logo suite, construction, colours, typography, graphics, applications (livery, helmet, kit, broadcast, social, app icon, merch) and usage rules.</p>
+
+<h3>Claude <a href="brand/claude/index.html">Compare all three →</a></h3>
+<div class="grid3">
+<a class="card concept" href="brand/claude/concept-1.html"><em>Concept A</em><b>Velocity</b><small>Wide italic F0 monogram with speed lines</small></a>
+<a class="card concept" href="brand/claude/concept-2.html"><em>Concept B</em><b>Apex Line</b><small>Slanted zero cut by the racing line</small></a>
+<a class="card concept" href="brand/claude/concept-3.html"><em>Concept C</em><b>Grid Crest</b><small>Racing shield with a checkered crown</small></a>
+</div>
+
+<h3>Codex <a href="brand/codex/index.html">Compare all three →</a></h3>
+<div class="grid3">
+<a class="card concept" href="brand/codex/concept-1.html"><em>Direction 01</em><b>Slipstream</b><small>Long, low speed wordmark with exit bars</small></a>
+<a class="card concept" href="brand/codex/concept-2.html"><em>Direction 02</em><b>Apex Crest</b><small>Six-sided race crest with an apex notch</small></a>
+<a class="card concept" href="brand/codex/concept-3.html"><em>Direction 03</em><b>Circuit Zero</b><small>Open-loop zero drawn as a track</small></a>
 </div>
 </main></body></html>
